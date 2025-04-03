@@ -2,19 +2,20 @@ import styles from './HeroStyles.module.css'
 import heroImg from '../../assets/hero-img.png'
 import sun from '../../assets/sun.svg'
 import moon from '../../assets/moon.svg'
-import instaLight from '../../assets/twitter-light.svg'
-import instaDark from '../../assets/twitter-dark.svg'
+import emailLight from '../../assets/email-light.svg'
+import emailDark from '../../assets/mail-dark.gif'
+
 import githubLight from '../../assets/github-light.svg'
 import githubDark from '../../assets/github-dark.svg'
 import linkedinLight from '../../assets/linkedin-light.svg'
 import linkedinDark from '../../assets/linkedin-dark.svg'
-import JavaDeveloper_Resume from '../../assets/JavaDeveloper_Resume.pdf'
+import JavaDeveloperResume from '../../assets/JavaDeveloper-Resume.pdf'
 import { useTheme } from '../../common/ThemeContext'
 
 function Hero() {
     const{theme,toggleTheme}=useTheme();
     const themeIcon=theme==='light'?sun:moon;
-    const instaIcon=theme==='light'?instaLight:instaDark;
+    const emailIcon=theme==='light'?emailLight:emailDark;
     const githubIcon=theme==='light'?githubLight:githubDark;
     const linkedinIcon=theme==='light'?linkedinLight:linkedinDark;
 
@@ -29,8 +30,8 @@ function Hero() {
             <h1>Sai Sudhakar <br/>Villa</h1>
             <h2>Full Stack Developer</h2>
             <span>
-                <a href="https://instagram.com/" target="_blank">
-                    <img src={instaIcon} alt="insta icon"/>
+                <a href="mailto:saivillacr57@gmail.com" target="_blank">
+                    <img src={emailIcon} alt="insta icon"/>
                 </a>
                 
                 <a href="https://github.com/" target="_blank">
@@ -42,7 +43,7 @@ function Hero() {
                 
             </span>
             <p className={styles.description}>I am a Full Stack Developer  building efficient and user-friendly applications.</p>
-            <a href={JavaDeveloper_Resume} download>
+            <a href={JavaDeveloperResume} download>
                 <button className='hover' >View My Resume</button>
             </a>
         </div>

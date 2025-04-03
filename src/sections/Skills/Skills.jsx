@@ -32,20 +32,24 @@ function Skills() {
             
             <div className={styles.skillList}>
                 <SkillList src={checkMarkIcon} skill="Reactjs"/>
-                <SkillList src={checkMarkIcon} skill="Redux"/>
-                <SkillList src={checkMarkIcon} skill="BootStrap"/>
-                <SkillList src={checkMarkIcon} skill="TailwindCSS"/>
+                <SkillList src={checkMarkIcon} skill="HTML"/>
+                <SkillList src={checkMarkIcon} skill="CSS"/>
+                <SkillList src={checkMarkIcon} skill="Javascript"/>
             </div>
            
             <hr/>
             
             <div className={styles.skillList}>
-                <SkillList src={checkMarkIcon} skill="HTML"/>
-                <SkillList src={checkMarkIcon} skill="CSS"/>
-                <SkillList src={checkMarkIcon} skill="JavaScript"/>
-                <SkillList src={checkMarkIcon} skill="Github"/>
                 <SkillList src={checkMarkIcon} skill="MySql"/>
                 <SkillList src={checkMarkIcon} skill="MongoDB"/>
+                <SkillList src={checkMarkIcon} skill="Maven"/>
+                <SkillList src={checkMarkIcon} skill="Git"/>
+                <SkillList src={checkMarkIcon} skill="Github"/>
+                <SkillList src={checkMarkIcon} skill="Vscode"/>
+                <SkillList src={checkMarkIcon} skill="Eclipse"/>
+
+
+                
             </div>
             
             
